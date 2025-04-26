@@ -12,7 +12,7 @@ return new class extends Migration
 	public function up(): void
 	{
 		Schema::table('banners', function (Blueprint $table) {
-			//$table->dropColumn('html_file');
+			$table->dropColumn('html_file');
 			$table->string('url')->nullable()->after('subcategory_id');
 		});
 	}

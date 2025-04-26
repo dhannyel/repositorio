@@ -23,11 +23,11 @@ class DatabaseSeeder extends Seeder
 			'email' => 'test@example.com',
 		]);
 
-		// DB::table('users')->insert([
-		// 	'name' => 'Administrador',
-		// 	'email' => 'admin@admin.com',
-		// 	'password' => Hash::make('#P4ss#')
-		// ]);
+		DB::table('users')->insert([
+			'name' => 'Administrador',
+			'email' => 'admin@admin.com',
+			'password' => Hash::make('#P4ss#')
+		]);
 
 		$this->call([
 			SlugSeeder::class,
