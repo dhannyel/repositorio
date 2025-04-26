@@ -21,8 +21,8 @@
 								<x-heroicon-o-rectangle-stack class="w-8 h-8" />
 								<h5
 										class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 ml-1">
-										Repositorio
-								</h5>
+										Repositorio de Banners
+								</h5> 
 						</a>
 						<!-- End Logo -->
 				</div>
