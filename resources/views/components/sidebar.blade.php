@@ -1,5 +1,7 @@
 @php
+		use App\Models\Tool;
 		$categories = \App\Models\Category::with('subcategories')->get();
+		$tool = Tool::first();
 @endphp
 
 <div id="hs-application-sidebar"
@@ -21,7 +23,7 @@
 								<x-heroicon-o-rectangle-stack class="w-8 h-8" />
 								<h5
 										class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 ml-1">
-										Repositorio de Banners
+										{{ $tool->title }}
 								</h5> 
 						</a>
 						<!-- End Logo -->
@@ -82,9 +84,10 @@
 																								    'subcategoria' => $sub->slug,
 																								    'title' => $firstBanner->slug,
 																								]) }}"
-																										class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200
+																										class="flex flex-col items-start gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200
 									{{ request()->is($category->slug . '/' . $sub->slug . '/*') ? 'font-bold sub-active' : '' }}">
 																										{{ $sub->name }}
+																										<div class="text-[#91a0ad] text-xs tracking-[1px] pl-[5px] font-normal">{{ $firstBanner->title }}</div>
 																								</a>
 																						</li>
 																				@endif
