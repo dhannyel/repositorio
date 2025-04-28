@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ToolsResource\Pages;
-use App\Filament\Resources\ToolsResource\RelationManagers;
+use App\Filament\Resources\ToolResource\Pages;
+use App\Filament\Resources\ToolResource\RelationManagers;
 use App\Models\Tool;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -13,7 +13,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ToolsResource extends Resource
+class ToolResource extends Resource
 {
 	protected static ?string $model = Tool::class;
 	protected static ?string $navigationGroup = 'Administración Dashboard';
@@ -80,8 +80,8 @@ class ToolsResource extends Resource
 	{
 		return [
 			'index' => Pages\ListTools::route('/'),
-			'create' => Pages\CreateTools::route('/create'),
-			'edit' => Pages\EditTools::route('/{record}/edit'),
+			'create' => Pages\CreateTool::route('/create'),
+			'edit' => Pages\EditTool::route('/{record}/edit'),
 		];
 	}
 }
