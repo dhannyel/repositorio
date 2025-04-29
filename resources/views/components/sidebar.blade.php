@@ -15,8 +15,8 @@
     lg:block lg:translate-x-0 lg:end-auto lg:bottom-0
     dark:bg-neutral-800 dark:border-neutral-700"
 		role="dialog" tabindex="-1" aria-label="Sidebar">
-		<div class="bg-[#f9fafb] bg-linear-65 from-[#fab024] to-[#e41851] relative flex flex-col h-full max-h-full">
-				<div class="px-6 pt-4 pb-[10px] flex items-center">
+		<div class="relative flex flex-col h-full max-h-full">
+				<div class="bg-linear-65 from-[#e41851] to-[#f6992a] border-b-[1px] border-[#f9fafb] px-6 pt-4 pb-[10px] flex items-center">
 						<!-- Logo -->
 						<a class="flex rounded-xl text-xl font-semibold focus:outline-hidden focus:opacity-80" href="{{ url('/') }}"
 								aria-label="Inicio">

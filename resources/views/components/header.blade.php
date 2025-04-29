@@ -10,9 +10,9 @@
 ])
 
 <header
-		class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-48 w-full bg-white border-b border-gray-200 text-sm py-2.5 lg:ps-65 dark:bg-neutral-800 dark:border-neutral-700">
+		class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-48 w-full bg-linear-65 from-[#fab024] to-[#e41851] border-b border-gray-200 text-sm py-2.5 lg:ps-65 dark:bg-neutral-800 dark:border-neutral-700">
 		<nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
-				<div class="me-5 lg:me-0 lg:hidden flex items-center">
+				<div class="me-5 lg:me-0 hidden flex items-center">
 						<!-- Logo -->
 						<a class="flex rounded-md text-xl font-semibold focus:outline-hidden focus:opacity-80" href="#"
 								aria-label="Preline">
@@ -24,7 +24,7 @@
 						<!-- End Logo -->
 				</div>
 
-				<div class="w-full flex items-center justify-end ms-auto md:justify-between gap-x-1 md:gap-x-3">
+				<div class="w-full flex items-center justify-between ms-auto md:justify-between gap-x-1 md:gap-x-3">
 						<div class="flex flex-row items-center justify-end gap-1">
 								<h2 class="text-xl font-semibold text-gray-800 dark:text-neutral-200">
 										{{ $category }} {{ $subcategory }} - {{ $title }}
