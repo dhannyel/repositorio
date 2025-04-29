@@ -12,20 +12,19 @@
 <header
 		class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-48 w-full bg-linear-65 from-[#fab024] to-[#e41851] border-b border-gray-200 text-sm py-2.5 lg:ps-65 dark:bg-neutral-800 dark:border-neutral-700">
 		<nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
-				<div class="me-5 lg:me-0 hidden flex items-center">
+				<div class="me-5 lg:me-0 lg:hidden flex items-center">
 						<!-- Logo -->
 						<a class="flex rounded-md text-xl font-semibold focus:outline-hidden focus:opacity-80" href="#"
 								aria-label="Preline">
-								<x-heroicon-o-rectangle-stack class="w-8 h-8" />
 								<h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-									{{ $tool->title }}
+									<img src="{{ asset('images/logo.png') }}" alt="{{ $tool->title }}" class="h-8 ml-1">
 								</h5>
 						</a>
 						<!-- End Logo -->
 				</div>
 
-				<div class="w-full flex items-center justify-between ms-auto md:justify-between gap-x-1 md:gap-x-3">
-						<div class="flex flex-row items-center justify-end gap-1">
+				<div class="w-full flex items-center justify-end ms-auto md:justify-between gap-x-1 md:gap-x-3">
+						<div class="flex flex-row items-center justify-end gap-1 hidden md:flex">
 								<h2 class="text-xl font-semibold text-gray-800 dark:text-neutral-200">
 										{{ $category }} {{ $subcategory }} - {{ $title }}
 								</h2>
